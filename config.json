@@ -1,0 +1,302 @@
+{
+  "meta": {
+    "pageTitle": "Rafael Almeida | Consultoria Dev Java + IA",
+    "description": "Seja aprovado nas maiores empresas de tech. Mentoria Dev Java + IA, grupo exclusivo de vagas e encontros diários ao vivo.",
+    "favicon": "assets/img/favicon.svg",
+    "lang": "pt-BR"
+  },
+  "theme": {
+    "accentFrom": "#8B5CF6",
+    "accentTo": "#3B82F6",
+    "background": "#08080C"
+  },
+  "brand": {
+    "name": "Rafael Almeida",
+    "logo": "",
+    "logoAlt": "Rafael Almeida"
+  },
+  "contacts": {
+    "whatsapp": "https://wa.me/5500000000000",
+    "whatsappMessage": "Quero entrar na consultoria!",
+    "instagram": "https://instagram.com/seu_perfil",
+    "linkedin": "https://linkedin.com/in/seu_perfil",
+    "email": "mailto:contato@email.com"
+  },
+  "nav": {
+    "cta": { "text": "Entrar agora", "link": "whatsapp" },
+    "items": [
+      { "label": "Benefícios", "anchor": "#benefits" },
+      { "label": "Mentoria", "anchor": "#products" },
+      { "label": "Encontros", "anchor": "#live" },
+      { "label": "Avaliações", "anchor": "#reviews" },
+      { "label": "FAQ", "anchor": "#faq" }
+    ]
+  },
+  "hero": {
+    "enabled": true,
+    "title": "Seja aprovado nas",
+    "highlight": "maiores empresas de tech",
+    "subtitle": "Mentoria Dev Java + IA com grupo exclusivo de vagas, comunidade no WhatsApp e encontros diários ao vivo. O mercado não espera — quem se prepara certo, entra.",
+    "image": "",
+    "badges": ["Vagas exclusivas", "Encontros diários", "Comunidade ativa"],
+    "cta": {
+      "primary": { "text": "Entrar no grupo exclusivo", "link": "whatsapp" },
+      "secondary": { "text": "Ver como funciona", "anchor": "#benefits" }
+    }
+  },
+  "problem": {
+    "enabled": true,
+    "title": "O mercado não perdoa quem fica parado",
+    "subtitle": "Se você se identifica com alguma dessas situações, essa mentoria foi feita pra você.",
+    "pains": [
+      {
+        "icon": "file-x",
+        "title": "Currículo ignorado",
+        "text": "Você manda dezenas de candidaturas e ninguém responde. Seu perfil não chega nem na mesa do recrutador."
+      },
+      {
+        "icon": "code",
+        "title": "Entrevista trava",
+        "text": "Você sabe Java, mas trava na hora H. Perde oportunidades em empresas que pagariam 3x mais."
+      },
+      {
+        "icon": "bot",
+        "title": "IA sem uso real",
+        "text": "Vê todo mundo usando IA e não sabe por onde começar. Enquanto isso, outros devs já estão na frente."
+      }
+    ],
+    "solutions": [
+      {
+        "icon": "target",
+        "title": "Currículo que passa no ATS",
+        "text": "Modelo validado + revisão personalizada para grandes empresas."
+      },
+      {
+        "icon": "users",
+        "title": "Preparação de entrevista",
+        "text": "Simulados técnicos e comportamentais com encontros ao vivo diários."
+      },
+      {
+        "icon": "zap",
+        "title": "IA no dia a dia",
+        "text": "Use inteligência artificial como vantagem competitiva real no mercado."
+      }
+    ]
+  },
+  "benefits": {
+    "enabled": true,
+    "id": "benefits",
+    "title": "O que você recebe",
+    "subtitle": "Tudo que precisa para acelerar sua carreira e ser aprovado nas maiores empresas.",
+    "items": [
+      {
+        "icon": "message-circle",
+        "title": "Mentoria Dev Java + IA",
+        "description": "Acompanhamento direto para evoluir tecnicamente e usar IA como diferencial no dia a dia.",
+        "image": ""
+      },
+      {
+        "icon": "briefcase",
+        "title": "Grupo exclusivo de vagas",
+        "description": "Oportunidades curadas de grandes empresas, compartilhadas apenas com membros ativos.",
+        "image": ""
+      },
+      {
+        "icon": "users",
+        "title": "Comunidade no WhatsApp",
+        "description": "Grupo ativo com devs que estão na mesma jornada. Networking real que abre portas.",
+        "image": ""
+      },
+      {
+        "icon": "video",
+        "title": "Encontros diários ao vivo",
+        "description": "Lives todos os dias sobre IA, entrevistas, currículo, Java e como encontrar vagas.",
+        "image": ""
+      },
+      {
+        "icon": "mic",
+        "title": "Preparação para entrevistas",
+        "description": "Simulados, dicas de comportamento e estratégias para passar em processos seletivos.",
+        "image": ""
+      },
+      {
+        "icon": "folder-git",
+        "title": "Projetos de portfólio",
+        "description": "Construa projetos que impressionam recrutadores e te destacam da concorrência.",
+        "image": ""
+      }
+    ]
+  },
+  "products": {
+    "enabled": true,
+    "id": "products",
+    "title": "A mentoria que vai te aprovar",
+    "subtitle": "Dev + IA + tudo que o mercado exige: entrevista, currículo e projetos.",
+    "carousel": {
+      "autoplay": false,
+      "interval": 5000,
+      "showArrows": false,
+      "showDots": false
+    },
+    "items": [
+      {
+        "name": "Mentoria Dev + IA + Preparação para o Mercado",
+        "description": "Programa completo para você dominar Java com IA, se destacar em entrevistas, montar um currículo que passa no ATS e construir projetos que impressionam recrutadores das maiores empresas.",
+        "price": "Sob consulta",
+        "image": "",
+        "badge": "Programa completo",
+        "highlighted": true,
+        "features": [
+          "Mentoria Dev Java + uso de IA no dia a dia",
+          "Preparação para entrevistas técnicas e comportamentais",
+          "Currículo otimizado para ATS e grandes empresas",
+          "Projetos de portfólio que chamam atenção",
+          "Grupo exclusivo de vagas",
+          "Encontros diários ao vivo na comunidade"
+        ],
+        "cta": {
+          "text": "Quero entrar na mentoria",
+          "link": "whatsapp",
+          "whatsappMessage": "Quero saber mais sobre a Mentoria Dev + IA + Preparação para o Mercado"
+        }
+      }
+    ]
+  },
+  "live": {
+    "enabled": true,
+    "id": "live",
+    "title": "Encontros diários ao vivo",
+    "subtitle": "Temas específicos, todos os dias. Aprenda com quem já passou pelas maiores empresas.",
+    "schedule": "Todo dia às 20h no grupo",
+    "topics": [
+      {
+        "icon": "bot",
+        "title": "IA no dia a dia do dev",
+        "description": "Como usar ChatGPT, Copilot e outras ferramentas para codar mais rápido e melhor."
+      },
+      {
+        "icon": "mic",
+        "title": "Preparação para entrevista",
+        "description": "Simulados técnicos, dicas de comportamento e estratégias para cada etapa do processo."
+      },
+      {
+        "icon": "file-text",
+        "title": "Montando currículo matador",
+        "description": "Modelo que passa no ATS e chama atenção de recrutadores das maiores empresas."
+      },
+      {
+        "icon": "coffee",
+        "title": "Java moderno + Spring Boot",
+        "description": "Conceitos e práticas que as empresas realmente cobram nas entrevistas."
+      },
+      {
+        "icon": "search",
+        "title": "Como encontrar vagas escondidas",
+        "description": "Estratégias para acessar oportunidades que não aparecem no LinkedIn."
+      }
+    ]
+  },
+  "companies": {
+    "enabled": true,
+    "title": "Grandes empresas te esperam",
+    "subtitle": "Nossos alunos já passaram por:",
+    "impactPhrase": "O mercado não espera. Quem se prepara certo, entra.",
+    "disclaimer": "*Resultados variam conforme dedicação individual.",
+    "items": [
+      { "name": "Nubank", "logo": "" },
+      { "name": "iFood", "logo": "" },
+      { "name": "Mercado Livre", "logo": "" },
+      { "name": "Itaú", "logo": "" },
+      { "name": "Ambev", "logo": "" },
+      { "name": "Stone", "logo": "" }
+    ]
+  },
+  "reviews": {
+    "enabled": true,
+    "id": "reviews",
+    "title": "O que dizem nossos alunos",
+    "subtitle": "Resultados reais de quem aplicou o método.",
+    "showRatingSummary": true,
+    "items": [
+      {
+        "name": "Lucas M.",
+        "role": "Dev Java",
+        "company": "Nubank",
+        "rating": 5,
+        "text": "Em 3 meses saí do zero em entrevistas técnicas e fui aprovado no Nubank. Os encontros diários mudaram completamente meu jogo.",
+        "avatar": ""
+      },
+      {
+        "name": "Ana P.",
+        "role": "Backend Developer",
+        "company": "iFood",
+        "rating": 5,
+        "text": "O grupo de vagas exclusivo vale ouro. Recebi 3 convites de entrevista na primeira semana. Nunca vi nada parecido.",
+        "avatar": ""
+      },
+      {
+        "name": "Pedro S.",
+        "role": "Software Engineer",
+        "company": "Mercado Livre",
+        "rating": 5,
+        "text": "Aprendi a usar IA no dia a dia e isso me diferenciou em todas as entrevistas. Hoje trabalho na empresa dos meus sonhos.",
+        "avatar": ""
+      }
+    ]
+  },
+  "faq": {
+    "enabled": true,
+    "id": "faq",
+    "title": "Perguntas frequentes",
+    "subtitle": "Tire suas dúvidas antes de entrar.",
+    "items": [
+      {
+        "question": "Preciso já saber Java avançado?",
+        "answer": "Não. A mentoria atende do intermediário ao avançado. O importante é ter vontade de evoluir e participar ativamente dos encontros."
+      },
+      {
+        "question": "Como funcionam os encontros diários?",
+        "answer": "Todo dia ao vivo no grupo, com temas específicos: IA, entrevistas, currículo, Java moderno e como encontrar vagas escondidas."
+      },
+      {
+        "question": "O grupo de vagas é realmente exclusivo?",
+        "answer": "Sim. Vagas curadas e compartilhadas apenas com membros ativos da mentoria — sem spam, só oportunidades reais de grandes empresas."
+      },
+      {
+        "question": "Quanto tempo até ver resultado?",
+        "answer": "Depende do seu ritmo, mas alunos dedicados costumam ver evolução significativa em 4 a 8 semanas com participação ativa."
+      },
+      {
+        "question": "Serve para quem está começando?",
+        "answer": "Se você já programa em Java e quer acelerar sua carreira, sim. Para iniciantes absolutos, recomendamos primeiro consolidar a base."
+      },
+      {
+        "question": "Tem garantia de aprovação?",
+        "answer": "Não prometemos aprovação — prometemos método, comunidade e preparação de alto nível. O resultado depende da sua dedicação."
+      }
+    ]
+  },
+  "cta": {
+    "enabled": true,
+    "title": "Sua aprovação começa agora",
+    "subtitle": "Não deixe para depois. As maiores empresas de tech estão contratando agora.",
+    "bullets": [
+      "Grupo exclusivo de vagas",
+      "Encontros diários ao vivo",
+      "Mentoria Dev Java + IA"
+    ],
+    "buttonText": "Quero entrar no grupo",
+    "urgencyText": "Vagas limitadas neste mês.",
+    "link": "whatsapp"
+  },
+  "footer": {
+    "copyright": "© 2026 Rafael Almeida. Todos os direitos reservados.",
+    "tagline": "Consultoria Dev Java + IA",
+    "social": [
+      { "platform": "instagram", "label": "Instagram", "link": "instagram", "icon": "instagram" },
+      { "platform": "whatsapp", "label": "WhatsApp", "link": "whatsapp", "icon": "message-circle" },
+      { "platform": "linkedin", "label": "LinkedIn", "link": "linkedin", "icon": "linkedin" },
+      { "platform": "email", "label": "Email", "link": "email", "icon": "mail" }
+    ]
+  }
+}
