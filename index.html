@@ -3,15 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <title>Loading...</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Seja aprovado nas maiores empresas de tech. Mentoria Dev Java + IA, grupo exclusivo de vagas e encontros diários ao vivo.">
+  <meta name="robots" content="index, follow">
+  <title>Rafael Almeida | Consultoria Dev Java + IA</title>
+  <link rel="canonical" href="https://developerrafu.github.io/landing-consultoria-java/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none'%3E%3Crect width='32' height='32' rx='8' fill='%238B5CF6'/%3E%3Cpath d='M8 22L16 8L24 22H8Z' stroke='white' stroke-width='2' stroke-linejoin='round'/%3E%3Ccircle cx='16' cy='18' r='2' fill='white'/%3E%3C/svg%3E" type="image/svg+xml">
+  <link rel="preload" href="config.json" as="fetch" crossorigin>
+  <link rel="modulepreload" href="assets/js/main.js">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="application/ld+json" id="structured-data">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://developerrafu.github.io/landing-consultoria-java/#website",
+        "url": "https://developerrafu.github.io/landing-consultoria-java/",
+        "name": "Rafael Almeida",
+        "description": "Seja aprovado nas maiores empresas de tech. Mentoria Dev Java + IA, grupo exclusivo de vagas e encontros diários ao vivo.",
+        "inLanguage": "pt-BR"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://developerrafu.github.io/landing-consultoria-java/#person",
+        "name": "Rafael Almeida",
+        "url": "https://developerrafu.github.io/landing-consultoria-java/",
+        "description": "Seja aprovado nas maiores empresas de tech. Mentoria Dev Java + IA, grupo exclusivo de vagas e encontros diários ao vivo."
+      }
+    ]
+  }
+  </script>
+  <script>
+    window.__CONFIG_PROMISE__ = fetch("config.json").then(function (response) {
+      if (!response.ok) throw new Error("Failed to load config.json");
+      return response.json();
+    });
+  </script>
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">
+    <header class="nav" id="nav">
+      <div class="container nav__inner">
+        <a href="#" class="nav__brand"><span class="nav__logo-text">Rafael Almeida</span></a>
+        <nav class="nav__menu" id="nav-menu" aria-label="Menu principal">
+          <a href="#benefits" class="nav__link">Benefícios</a>
+          <a href="#products" class="nav__link">Mentoria</a>
+          <a href="#live" class="nav__link">Encontros</a>
+          <a href="#reviews" class="nav__link">Avaliações</a>
+          <a href="#faq" class="nav__link">FAQ</a>
+        </nav>
+        <div class="nav__actions">
+          <a href="https://wa.me/5500000000000?text=Quero%20entrar%20na%20consultoria!" class="btn btn--primary btn--sm nav__cta" target="_blank" rel="noopener">Entrar agora</a>
+          <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false" type="button">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="main-content">
+      <section class="section hero" id="hero">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <div class="hero__badges">
+              <span class="badge">Vagas exclusivas</span>
+              <span class="badge">Encontros diários</span>
+              <span class="badge">Comunidade ativa</span>
+            </div>
+            <h1 class="hero__title">
+              Seja aprovado nas
+              <span class="gradient-text">maiores empresas de tech</span>
+            </h1>
+            <p class="hero__subtitle">Mentoria Dev Java + IA com grupo exclusivo de vagas, comunidade no WhatsApp e encontros diários ao vivo. O mercado não espera — quem se prepara certo, entra.</p>
+            <div class="hero__actions">
+              <a href="https://wa.me/5500000000000?text=Quero%20entrar%20na%20consultoria!" class="btn btn--primary" target="_blank" rel="noopener">Entrar no grupo exclusivo</a>
+              <a href="#benefits" class="btn btn--ghost">Ver como funciona</a>
+            </div>
+          </div>
+          <div class="hero__visual">
+            <div class="hero__visual-placeholder">
+              <div class="hero__glow"></div>
+              <div class="hero__card-preview glass">
+                <span>Java + IA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
   <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>

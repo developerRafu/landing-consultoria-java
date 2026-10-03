@@ -3,7 +3,10 @@
     "pageTitle": "Rafael Almeida | Consultoria Dev Java + IA",
     "description": "Seja aprovado nas maiores empresas de tech. Mentoria Dev Java + IA, grupo exclusivo de vagas e encontros diários ao vivo.",
     "favicon": "assets/img/favicon.svg",
-    "lang": "pt-BR"
+    "lang": "pt-BR",
+    "siteUrl": "https://developerrafu.github.io/landing-consultoria-java/",
+    "ogType": "website",
+    "twitterCard": "summary"
   },
   "theme": {
     "accentFrom": "#8B5CF6",

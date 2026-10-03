@@ -1,5 +1,4 @@
 import { renderIcon } from "./icons.js";
-import { initCarousel } from "./carousel.js";
 
 const SECTION_ORDER = [
   "hero",
@@ -14,6 +13,9 @@ const SECTION_ORDER = [
 ];
 
 async function loadConfig() {
+  if (window.__CONFIG_PROMISE__) {
+    return window.__CONFIG_PROMISE__;
+  }
   const response = await fetch("config.json");
   if (!response.ok) throw new Error("Failed to load config.json");
   return response.json();
@@ -43,7 +45,7 @@ function getInitials(name) {
 }
 
 function getAvatarColor(name) {
-  const colors = ["#8B5CF6", "#3B82F6", "#06B6D4", "#10B981", "#F59E0B", "#EF4444"];
+  const colors = ["#6D28D9", "#1D4ED8", "#0E7490", "#047857", "#92400E", "#B91C1C"];
   let hash = 0;
   for (let i = 0; i < name.length; i++) hash = name.charCodeAt(i) + ((hash << 5) - hash);
   return colors[Math.abs(hash) % colors.length];
@@ -63,20 +65,128 @@ function applyTheme(theme) {
   root.style.setProperty("--bg", theme.background || "#08080C");
 }
 
-function applyMeta(meta, brand) {
-  document.documentElement.lang = meta.lang || "pt-BR";
-  document.title = meta.pageTitle || brand.name;
-  const desc = document.querySelector('meta[name="description"]');
-  if (desc) desc.content = meta.description || "";
-  if (meta.favicon) {
-    let link = document.querySelector('link[rel="icon"]');
-    if (!link) {
-      link = document.createElement("link");
-      link.rel = "icon";
-      document.head.appendChild(link);
-    }
-    link.href = meta.favicon;
+function upsertMeta(selector, attributes) {
+  let element = document.querySelector(selector);
+  if (!element) {
+    element = document.createElement("meta");
+    document.head.appendChild(element);
   }
+  Object.entries(attributes).forEach(([key, value]) => {
+    element.setAttribute(key, value);
+  });
+}
+
+function upsertLink(rel, href) {
+  let link = document.querySelector(`link[rel="${rel}"]`);
+  if (!link) {
+    link = document.createElement("link");
+    link.rel = rel;
+    document.head.appendChild(link);
+  }
+  link.href = href;
+}
+
+function resolveAbsoluteUrl(path, siteUrl) {
+  if (!path) return "";
+  if (path.startsWith("http")) return path;
+  const base = (siteUrl || "").replace(/\/$/, "");
+  return `${base}/${path.replace(/^\//, "")}`;
+}
+
+function applyMeta(meta, brand) {
+  const title = meta.pageTitle || brand.name;
+  const description = meta.description || "";
+  const siteUrl = meta.siteUrl || "";
+
+  document.documentElement.lang = meta.lang || "pt-BR";
+  document.title = title;
+
+  upsertMeta('meta[name="description"]', { name: "description", content: description });
+  upsertMeta('meta[name="robots"]', { name: "robots", content: "index, follow" });
+
+  if (siteUrl) {
+    upsertLink("canonical", siteUrl);
+  }
+
+  upsertMeta('meta[property="og:title"]', { property: "og:title", content: title });
+  upsertMeta('meta[property="og:description"]', { property: "og:description", content: description });
+  upsertMeta('meta[property="og:type"]', { property: "og:type", content: meta.ogType || "website" });
+  upsertMeta('meta[property="og:locale"]', { property: "og:locale", content: (meta.lang || "pt-BR").replace("-", "_") });
+
+  if (siteUrl) {
+    upsertMeta('meta[property="og:url"]', { property: "og:url", content: siteUrl });
+  }
+
+  if (meta.ogImage) {
+    const imageUrl = resolveAbsoluteUrl(meta.ogImage, siteUrl);
+    upsertMeta('meta[property="og:image"]', { property: "og:image", content: imageUrl });
+  }
+
+  upsertMeta('meta[name="twitter:card"]', { name: "twitter:card", content: meta.twitterCard || "summary" });
+  upsertMeta('meta[name="twitter:title"]', { name: "twitter:title", content: title });
+  upsertMeta('meta[name="twitter:description"]', { name: "twitter:description", content: description });
+
+  if (meta.favicon && !document.querySelector('link[rel="icon"][href^="data:"]')) {
+    upsertLink("icon", meta.favicon);
+    const iconLink = document.querySelector('link[rel="icon"]');
+    if (iconLink) iconLink.type = "image/svg+xml";
+  }
+}
+
+function buildStructuredData(config) {
+  const meta = config.meta || {};
+  const brand = config.brand || {};
+  const siteUrl = meta.siteUrl || "";
+  const graphs = [];
+
+  graphs.push({
+    "@type": "WebSite",
+    "@id": `${siteUrl}#website`,
+    url: siteUrl,
+    name: brand.name,
+    description: meta.description,
+    inLanguage: meta.lang || "pt-BR"
+  });
+
+  graphs.push({
+    "@type": "Person",
+    "@id": `${siteUrl}#person`,
+    name: brand.name,
+    url: siteUrl,
+    description: meta.description
+  });
+
+  if (config.faq?.items?.length) {
+    graphs.push({
+      "@type": "FAQPage",
+      "@id": `${siteUrl}#faq`,
+      mainEntity: config.faq.items.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.answer
+        }
+      }))
+    });
+  }
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": graphs
+  };
+}
+
+function applyStructuredData(config) {
+  const scriptId = "structured-data";
+  const existing = document.getElementById(scriptId);
+  if (existing) existing.remove();
+
+  const script = document.createElement("script");
+  script.id = scriptId;
+  script.type = "application/ld+json";
+  script.textContent = JSON.stringify(buildStructuredData(config));
+  document.head.appendChild(script);
 }
 
 function renderNav(nav, brand, contacts) {
@@ -427,16 +537,54 @@ function isSectionEnabled(config, key) {
   return section && section.enabled !== false;
 }
 
-function renderPage(config) {
-  const sections = SECTION_ORDER
+function renderSections(config, skipHero = false) {
+  const order = skipHero ? SECTION_ORDER.filter((key) => key !== "hero") : SECTION_ORDER;
+
+  return order
     .filter((key) => isSectionEnabled(config, key))
     .map((key) => RENDERERS[key](config))
     .join("");
+}
 
+function renderPage(config) {
   return `
     ${renderNav(config.nav, config.brand, config.contacts)}
-    <main>${sections}</main>
+    <main>${renderSections(config)}</main>
     ${renderFooter(config.footer, config.brand, config.contacts)}`;
+}
+
+function updateNavFromConfig(config) {
+  const nav = config.nav || {};
+  const contacts = config.contacts || {};
+  const brand = config.brand || {};
+
+  const brandEl = document.querySelector(".nav__brand");
+  if (brandEl && brand.name) {
+    brandEl.innerHTML = brand.logo
+      ? renderImage(brand.logo, brand.logoAlt, "nav__logo-img", "")
+      : `<span class="nav__logo-text">${escapeHtml(brand.name)}</span>`;
+  }
+
+  const cta = document.querySelector(".nav__cta");
+  if (cta && nav.cta) {
+    cta.href = resolveLink(nav.cta.link, contacts);
+    cta.textContent = nav.cta.text;
+  }
+}
+
+function hydratePage(config) {
+  const app = document.getElementById("app");
+  const mainEl = document.getElementById("main-content");
+
+  if (!mainEl) {
+    app.innerHTML = renderPage(config);
+    return;
+  }
+
+  const skipHero = Boolean(document.getElementById("hero"));
+  mainEl.insertAdjacentHTML("beforeend", renderSections(config, skipHero));
+  app.insertAdjacentHTML("beforeend", renderFooter(config.footer, config.brand, config.contacts));
+  updateNavFromConfig(config);
 }
 
 function initNav() {
@@ -466,8 +614,10 @@ function initNav() {
 
 function initReveal() {
   const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const elements = document.querySelectorAll(".reveal");
+
   if (prefersReduced) {
-    document.querySelectorAll(".reveal").forEach((el) => el.classList.add("reveal--visible"));
+    elements.forEach((el) => el.classList.add("reveal--visible"));
     return;
   }
 
@@ -480,11 +630,15 @@ function initReveal() {
     });
   }, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
 
-  document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+  elements.forEach((el) => observer.observe(el));
 }
 
-function initCarousels() {
-  document.querySelectorAll("[data-carousel]").forEach((container) => {
+async function initCarousels() {
+  const containers = document.querySelectorAll("[data-carousel]");
+  if (!containers.length) return;
+
+  const { initCarousel } = await import("./carousel.js");
+  containers.forEach((container) => {
     initCarousel(container, {
       autoplay: container.dataset.autoplay === "true",
       interval: parseInt(container.dataset.interval, 10) || 5000,
@@ -499,13 +653,13 @@ async function main() {
     const config = await loadConfig();
     applyTheme(config.theme || {});
     applyMeta(config.meta || {}, config.brand || {});
+    applyStructuredData(config);
 
-    const app = document.getElementById("app");
-    app.innerHTML = renderPage(config);
+    hydratePage(config);
 
     initNav();
     initReveal();
-    initCarousels();
+    await initCarousels();
   } catch (error) {
     console.error(error);
     document.getElementById("app").innerHTML = `
