@@ -19,9 +19,10 @@
     "logoAlt": "Rafael Almeida"
   },
   "contacts": {
-    "whatsapp": "https://wa.me/5500000000000",
+    "whatsapp": "https://wa.me/559183610117",
     "whatsappMessage": "Quero entrar na consultoria!",
-    "instagram": "https://instagram.com/seu_perfil",
+    "instagram": "https://www.instagram.com/rafu.class/",
+    "github": "https://github.com/developerRafu",
     "linkedin": "https://linkedin.com/in/seu_perfil",
     "email": "mailto:contato@email.com"
   },
@@ -296,10 +297,9 @@
     "copyright": "© 2026 Rafael Almeida. Todos os direitos reservados.",
     "tagline": "Consultoria Dev Java + IA",
     "social": [
-      { "platform": "instagram", "label": "Instagram", "link": "instagram", "icon": "instagram" },
       { "platform": "whatsapp", "label": "WhatsApp", "link": "whatsapp", "icon": "message-circle" },
-      { "platform": "linkedin", "label": "LinkedIn", "link": "linkedin", "icon": "linkedin" },
-      { "platform": "email", "label": "Email", "link": "email", "icon": "mail" }
+      { "platform": "instagram", "label": "Instagram", "link": "instagram", "icon": "instagram" },
+      { "platform": "github", "label": "GitHub", "link": "github", "icon": "github" }
     ]
   }
 }

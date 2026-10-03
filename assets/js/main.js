@@ -572,6 +572,25 @@ function updateNavFromConfig(config) {
   }
 }
 
+function updateHeroFromConfig(config) {
+  const hero = config.hero || {};
+  const contacts = config.contacts || {};
+  const primaryCta = hero.cta?.primary;
+  const secondaryCta = hero.cta?.secondary;
+
+  const primaryBtn = document.querySelector(".hero__actions .btn--primary");
+  if (primaryBtn && primaryCta) {
+    primaryBtn.href = resolveLink(primaryCta.link, contacts);
+    primaryBtn.textContent = primaryCta.text;
+  }
+
+  const secondaryBtn = document.querySelector(".hero__actions .btn--ghost");
+  if (secondaryBtn && secondaryCta?.anchor) {
+    secondaryBtn.href = secondaryCta.anchor;
+    secondaryBtn.textContent = secondaryCta.text;
+  }
+}
+
 function hydratePage(config) {
   const app = document.getElementById("app");
   const mainEl = document.getElementById("main-content");
@@ -585,6 +604,7 @@ function hydratePage(config) {
   mainEl.insertAdjacentHTML("beforeend", renderSections(config, skipHero));
   app.insertAdjacentHTML("beforeend", renderFooter(config.footer, config.brand, config.contacts));
   updateNavFromConfig(config);
+  updateHeroFromConfig(config);
 }
 
 function initNav() {
