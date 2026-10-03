@@ -44,7 +44,7 @@
     "image": "",
     "badges": ["Vagas exclusivas", "Encontros diários", "Comunidade ativa"],
     "cta": {
-      "primary": { "text": "Entrar no grupo exclusivo", "link": "whatsapp" },
+      "primary": { "text": "Entre em contato comigo", "link": "whatsapp" },
       "secondary": { "text": "Ver como funciona", "anchor": "#benefits" }
     }
   },
@@ -289,7 +289,7 @@
       "Encontros diários ao vivo",
       "Mentoria Dev Java + IA"
     ],
-    "buttonText": "Quero entrar no grupo",
+    "buttonText": "Entre em contato comigo",
     "urgencyText": "Vagas limitadas neste mês.",
     "link": "whatsapp"
   },
