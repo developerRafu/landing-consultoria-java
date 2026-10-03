@@ -67,6 +67,44 @@
       pointer-events: auto;
     }
 
+    .slide--scroll.is-active {
+      justify-content: flex-start;
+      overflow-x: hidden;
+      overflow-y: auto;
+      padding-bottom: 4.5rem;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .slide--checklist h2 {
+      font-size: clamp(1.35rem, 3vw, 2rem);
+      margin-bottom: 0.5rem;
+    }
+
+    .slide--checklist .grid-2 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.65rem;
+      max-width: 62rem;
+    }
+
+    @media (max-width: 900px) {
+      .slide--checklist .grid-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    .slide--checklist .mini-card {
+      padding: 0.65rem 0.75rem;
+    }
+
+    .slide--checklist .mini-card h3 {
+      font-size: 0.72rem;
+    }
+
+    .slide--checklist .mini-card p {
+      font-size: 0.82rem;
+      line-height: 1.35;
+    }
+
     .slide--section {
       justify-content: flex-end;
       padding-bottom: clamp(3rem, 12vh, 6rem);
@@ -390,7 +428,7 @@
     </section>
 
     <!-- 5 -->
-    <section class="slide" data-slide="5">
+    <section class="slide slide--scroll slide--checklist" data-slide="5">
       <span class="badge">Linguagem</span>
       <h2>Critérios práticos (checklist)</h2>
       <div class="grid-2">
