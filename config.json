@@ -1,7 +1,7 @@
 {
   "meta": {
-    "pageTitle": "Rafael Almeida | Consultoria Dev Java + IA",
-    "description": "Seja aprovado nas maiores empresas de tech. Mentoria Dev Java + IA, grupo exclusivo de vagas e encontros diários ao vivo.",
+    "pageTitle": "Rafael Almeida | Consultoria Dev Java, Microsserviços e IA",
+    "description": "Mentoria de carreira Dev Java + IA e consultoria para empresas em microsserviços e inteligência artificial. Vagas exclusivas e encontros ao vivo.",
     "favicon": "assets/img/favicon.svg",
     "lang": "pt-BR",
     "siteUrl": "https://developerrafu.github.io/landing-consultoria-java/",
@@ -20,7 +20,7 @@
   },
   "contacts": {
     "whatsapp": "https://wa.me/559183610117",
-    "whatsappMessage": "Quero entrar na consultoria!",
+    "whatsappMessage": "Olá! Quero saber mais sobre mentoria de carreira e consultoria em microsserviços e IA.",
     "instagram": "https://www.instagram.com/rafu.class/",
     "github": "https://github.com/developerRafu",
     "linkedin": "https://linkedin.com/in/seu_perfil",
@@ -40,7 +40,7 @@
     "enabled": true,
     "title": "Seja aprovado nas",
     "highlight": "maiores empresas de tech",
-    "subtitle": "Mentoria Dev Java + IA com grupo exclusivo de vagas, comunidade no WhatsApp e encontros diários ao vivo. O mercado não espera — quem se prepara certo, entra.",
+    "subtitle": "Mentoria Dev Java + IA para sua carreira e consultoria em microsserviços e IA para empresas. Grupo de vagas, comunidade no WhatsApp e encontros diários ao vivo.",
     "image": "",
     "badges": ["Vagas exclusivas", "Encontros diários", "Comunidade ativa"],
     "cta": {
@@ -134,8 +134,8 @@
   "products": {
     "enabled": true,
     "id": "products",
-    "title": "A mentoria que vai te aprovar",
-    "subtitle": "Dev + IA + tudo que o mercado exige: entrevista, currículo e projetos.",
+    "title": "Mentoria e consultoria",
+    "subtitle": "Carreira em Dev + IA para você; microsserviços e IA para o seu time e sua empresa.",
     "carousel": {
       "autoplay": false,
       "interval": 5000,
@@ -144,8 +144,8 @@
     },
     "items": [
       {
-        "name": "Mentoria Dev + IA + Preparação para o Mercado",
-        "description": "Programa completo para você dominar Java com IA, se destacar em entrevistas, montar um currículo que passa no ATS e construir projetos que impressionam recrutadores das maiores empresas.",
+        "name": "Mentoria de carreira + Consultoria para empresas",
+        "description": "Para devs: Java com IA, entrevistas, currículo ATS e portfólio. Para empresas: consultoria em arquitetura de microsserviços, integração de IA em produção e evolução técnica do time.",
         "price": "Sob consulta",
         "image": "",
         "badge": "Programa completo",
@@ -156,12 +156,13 @@
           "Currículo otimizado para ATS e grandes empresas",
           "Projetos de portfólio que chamam atenção",
           "Grupo exclusivo de vagas",
-          "Encontros diários ao vivo na comunidade"
+          "Encontros diários ao vivo na comunidade",
+          "Consultoria em microsserviços e IA para empresas"
         ],
         "cta": {
-          "text": "Quero entrar na mentoria",
+          "text": "Entre em contato comigo",
           "link": "whatsapp",
-          "whatsappMessage": "Quero saber mais sobre a Mentoria Dev + IA + Preparação para o Mercado"
+          "whatsappMessage": "Olá! Quero saber mais sobre mentoria de carreira e consultoria em microsserviços e IA para empresas."
         }
       }
     ]
@@ -287,7 +288,8 @@
     "bullets": [
       "Grupo exclusivo de vagas",
       "Encontros diários ao vivo",
-      "Mentoria Dev Java + IA"
+      "Mentoria Dev Java + IA",
+      "Consultoria em microsserviços e IA para empresas"
     ],
     "buttonText": "Entre em contato comigo",
     "urgencyText": "Vagas limitadas neste mês.",
@@ -295,7 +297,7 @@
   },
   "footer": {
     "copyright": "© 2026 Rafael Almeida. Todos os direitos reservados.",
-    "tagline": "Consultoria Dev Java + IA",
+    "tagline": "Dev Java, microsserviços e IA — carreira e empresas",
     "social": [
       { "platform": "whatsapp", "label": "WhatsApp", "link": "whatsapp", "icon": "message-circle" },
       { "platform": "instagram", "label": "Instagram", "link": "instagram", "icon": "instagram" },
