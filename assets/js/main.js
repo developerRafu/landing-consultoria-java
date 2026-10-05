@@ -242,7 +242,7 @@ function renderHero(hero, contacts) {
           <div class="hero__badges">${badges}</div>
           <h1 class="hero__title">
             ${escapeHtml(hero.title)}
-            <span class="gradient-text">${escapeHtml(hero.highlight)}</span>
+            <span class="accent-text">${escapeHtml(hero.highlight)}</span>
           </h1>
           <p class="hero__subtitle">${escapeHtml(hero.subtitle)}</p>
           <div class="hero__actions">
@@ -397,7 +397,7 @@ function renderCompanies(companies) {
           <p class="section__subtitle">${escapeHtml(companies.subtitle)}</p>
         </div>
         <div class="companies__grid">${items}</div>
-        <p class="companies__impact gradient-text reveal">${escapeHtml(companies.impactPhrase)}</p>
+        <p class="companies__impact accent-text reveal">${escapeHtml(companies.impactPhrase)}</p>
         ${companies.disclaimer ? `<p class="companies__disclaimer reveal">${escapeHtml(companies.disclaimer)}</p>` : ""}
       </div>
     </section>`;

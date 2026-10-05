@@ -23,11 +23,11 @@
     "whatsappMessage": "Olá! Quero saber mais sobre mentoria de carreira e consultoria em microsserviços e IA.",
     "instagram": "https://www.instagram.com/rafu.class/",
     "github": "https://github.com/developerRafu",
-    "linkedin": "https://linkedin.com/in/seu_perfil",
-    "email": "mailto:contato@email.com"
+    "linkedin": "",
+    "email": ""
   },
   "nav": {
-    "cta": { "text": "Entrar agora", "link": "whatsapp" },
+    "cta": { "text": "Entre em contato comigo", "link": "whatsapp" },
     "items": [
       { "label": "Benefícios", "anchor": "#benefits" },
       { "label": "Mentoria", "anchor": "#products" },
@@ -301,7 +301,9 @@
     "social": [
       { "platform": "whatsapp", "label": "WhatsApp", "link": "whatsapp", "icon": "message-circle" },
       { "platform": "instagram", "label": "Instagram", "link": "instagram", "icon": "instagram" },
-      { "platform": "github", "label": "GitHub", "link": "github", "icon": "github" }
+      { "platform": "github", "label": "GitHub", "link": "github", "icon": "github" },
+      { "platform": "portfolio", "label": "Portfólio", "link": "https://developerrafu.github.io/portfolio/", "icon": "sparkles" },
+      { "platform": "slides", "label": "Slides carreira", "link": "https://developerrafu.github.io/portfolio/apresentacao/dev-juninho-30-slides.html", "icon": "video" }
     ]
   }
 }
