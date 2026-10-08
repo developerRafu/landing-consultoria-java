@@ -1,0 +1,502 @@
+{
+  "meta": {
+    "id": "dev-juninho-30",
+    "title": "Dev: dicas de carreira pra Juninho — 30 slides",
+    "shortTitle": "Dev Juninho",
+    "lang": "pt-BR",
+    "slideTitlePrefix": "Slide",
+    "navigationHint": "Use ← → ou clique em Avançar · F = tela cheia"
+  },
+  "slides": [
+    {
+      "order": 1,
+      "modifiers": [],
+      "badge": "Norte4j — Java &amp; Kotlin Community",
+      "type": "cover",
+      "title": "Dev: dicas de carreira",
+      "titleScript": "pra Juninho",
+      "subtitle": "Do primeiro commit a grandes conquistas — estudos, vagas, visibilidade, rede e IA sem ilusão.",
+      "meta": "Use ← → ou clique em Avançar · F = tela cheia",
+      "image": {
+        "src": "assets/capa-norte4j.jpg",
+        "alt": "Capa do evento Dev: dicas de carreira pra Juninho"
+      }
+    },
+    {
+      "order": 2,
+      "modifiers": [],
+      "badge": "Roteiro",
+      "type": "grid",
+      "title": "O que vamos conversar",
+      "cards": [
+        {
+          "title": "01",
+          "text": "Escolher linguagem (sem fanatismo)"
+        },
+        {
+          "title": "02",
+          "text": "O que estudar além do tutorial"
+        },
+        {
+          "title": "03",
+          "text": "Primeira vaga e dia a dia"
+        },
+        {
+          "title": "04",
+          "text": "Subir de senioridade com ética"
+        },
+        {
+          "title": "05",
+          "text": "Networking que abre porta"
+        },
+        {
+          "title": "06",
+          "text": "IA como multiplicador"
+        },
+        {
+          "title": "→",
+          "text": "Desafio: projeto guiado Java + Angular no GitHub"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "modifiers": [
+        "section"
+      ],
+      "badge": "Tema 01",
+      "type": "section",
+      "sectionNum": "01",
+      "title": "Como escolher a linguagem",
+      "subtitle": "Não existe “a melhor”. Existe a que você vai usar com consistência."
+    },
+    {
+      "order": 4,
+      "modifiers": [],
+      "badge": "Linguagem",
+      "type": "card",
+      "title": "Sem preferência religiosa",
+      "items": [
+        "<strong>Java, Kotlin, C#, Python, Go…</strong> são ferramentas. O mercado contrata problema resolvido, não logo na camiseta.",
+        "Parar de trocar de stack todo mês é metade da batalha.",
+        "Escolha com base em <strong>vagas na sua regão</strong>, <strong>comunidade ativa</strong> e <strong>tipo de produto</strong> que te anima (web, mobile, backend, dados)."
+      ],
+      "quote": "Pergunta útil: “Onde eu quero estar empregado em 12 meses?” — a resposta costuma apontar a stack."
+    },
+    {
+      "order": 5,
+      "modifiers": [
+        "scroll",
+        "checklist"
+      ],
+      "badge": "Linguagem",
+      "type": "grid",
+      "title": "Critérios práticos (checklist)",
+      "cards": [
+        {
+          "title": "Mercado",
+          "text": "Abra 20 vagas júnior/estágio e conte a stack mais repetida — não o Twitter."
+        },
+        {
+          "title": "Curva",
+          "text": "Uma linguagem “difícil” com mentoria e comunidade pode ser mais rápida que uma “fácil” sozinho."
+        },
+        {
+          "title": "Ecossistema",
+          "text": "Framework maduro, documentação, empresas usando em produção."
+        },
+        {
+          "title": "Projeto âncora",
+          "text": "Um projeto real (API, app, automação) fixa a escolha melhor que 40 cursos."
+        },
+        {
+          "title": "Fullstack → especialista",
+          "text": "Comece <strong>fullstack / full cycle</strong> (back, front, deploy, entrega ponta a ponta) — é o perfil com <strong>mais janelas</strong> no início. Depois aprofunde onde o mercado e você mais combinam."
+        },
+        {
+          "title": "Nuvem (AWS)",
+          "text": "Estude bastante <strong>computação em nuvem</strong>, principalmente <strong>AWS</strong> e o ecossistema: EC2, S3, RDS, Lambda, IAM, CloudWatch — deploy e operação viram diferencial cedo."
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "modifiers": [
+        "section"
+      ],
+      "badge": "Tema 02",
+      "type": "section",
+      "sectionNum": "02",
+      "title": "O que estudar",
+      "subtitle": "Sair do óbvio: o júnior que só replica tutorial some na massa."
+    },
+    {
+      "order": 7,
+      "modifiers": [],
+      "badge": "Fundamentos",
+      "type": "card",
+      "title": "Estrutura de dados &amp; complexidade",
+      "items": [
+        "Listas, mapas, filas, árvores — <strong>quando usar cada uma</strong> no dia a dia (cache, fila, índice).",
+        "Big O na prática: loop aninhado em lista grande? Índice no banco? N+1?",
+        "LeetCode infinito não é obrigatório; <strong>entender trade-off</strong> é."
+      ]
+    },
+    {
+      "order": 8,
+      "modifiers": [],
+      "badge": "Fundamentos",
+      "type": "card",
+      "title": "Segurança (mínimo viável de produção)",
+      "items": [
+        "Auth: sessão vs JWT, expiração, não logar senha/token.",
+        "OWASP Top 10 em linguagem humana: injection, XSS, IDOR, secrets no repo.",
+        "Dependências: <strong>CVE não é só coisa de sênior</strong> — rode scanner no CI quando puder."
+      ]
+    },
+    {
+      "order": 9,
+      "modifiers": [],
+      "badge": "Fundamentos",
+      "type": "card",
+      "title": "Performance",
+      "items": [
+        "Meça antes de “otimizar”: logs, APM, query lenta, profiling.",
+        "Cache com critério (o que invalida? consistência?).",
+        "Async/concorrência só quando o gargalo está claro — complexidade tem custo."
+      ]
+    },
+    {
+      "order": 10,
+      "modifiers": [],
+      "badge": "Fundamentos",
+      "type": "card",
+      "title": "Resiliência de aplicações",
+      "items": [
+        "Timeout, retry com backoff, circuit breaker — serviço externo <strong>vai</strong> cair.",
+        "Idempotência em filas e pagamentos.",
+        "Health check, graceful shutdown, fila morta (DLQ)."
+      ]
+    },
+    {
+      "order": 11,
+      "modifiers": [],
+      "badge": "Fundamentos",
+      "type": "grid",
+      "title": "Sair do óbvio",
+      "cards": [
+        {
+          "title": "Cloud (AWS)",
+          "text": "Domine pelo menos <strong>4 ferramentas</strong> — ex.: S3, IAM, Lambda, RDS, CloudWatch, ECS (o que seu time usar de verdade)."
+        },
+        {
+          "title": "Observabilidade",
+          "text": "Métricas, traces, correlação de request — “funciona na minha máquina” não escala."
+        },
+        {
+          "title": "Deploy &amp; CI",
+          "text": "Pipeline que roda teste e lint; ambiente parecido com produção."
+        },
+        {
+          "title": "Domínio",
+          "text": "Ler regra de negócio e perguntar “e se falhar aqui?”"
+        },
+        {
+          "title": "Escrita",
+          "text": "ADR curto, PR description, post-mortem — comunicação é skill técnica."
+        }
+      ]
+    },
+    {
+      "order": 12,
+      "modifiers": [
+        "section"
+      ],
+      "badge": "Tema 03",
+      "type": "section",
+      "sectionNum": "03",
+      "title": "Primeira vaga",
+      "subtitle": "Estágio, trainee, júnior — o jogo é entrada + aprendizado acelerado."
+    },
+    {
+      "order": 13,
+      "modifiers": [],
+      "badge": "Primeira vaga",
+      "type": "card",
+      "title": "Estágio × trainee × júnior",
+      "items": [
+        "<strong>Estágio:</strong> foco em formação; expectativa de mentoria; ótimo para carteira e ritmo de estudo.",
+        "<strong>Trainee:</strong> programa estruturado; turma; prazo definido para virar pleno/júnior.",
+        "<strong>Júnior:</strong> entrega com supervisão; menos “aula”, mais produto."
+      ],
+      "quote": "Aceite o degrau que te coloca <em>dentro</em> de um time que shipa código de verdade."
+    },
+    {
+      "order": 14,
+      "modifiers": [],
+      "badge": "Primeira vaga",
+      "type": "grid",
+      "title": "Onde procurar",
+      "cards": [
+        {
+          "title": "Plataformas",
+          "text": "LinkedIn, Gupy, Catho, Programathor, GeekHunter, site da empresa."
+        },
+        {
+          "title": "Comunidades",
+          "text": "Discord/WhatsApp de cidade, meetups (Norte4j!), grupos de vagas com curadoria."
+        },
+        {
+          "title": "Indicação",
+          "text": "Ex-faculdade, mentores, palestrantes — mensagem curta + link do GitHub/LinkedIn."
+        },
+        {
+          "title": "ATS",
+          "text": "CV com palavras da vaga; portfólio linkado; projeto deployado &gt; 10 certificados."
+        }
+      ]
+    },
+    {
+      "order": 15,
+      "modifiers": [],
+      "badge": "Primeira vaga",
+      "type": "card",
+      "title": "Comportamento no dia a dia",
+      "items": [
+        "<strong>Pergunte cedo</strong> quando travar 30–45 min — com contexto e o que já tentou.",
+        "<strong>Entregue em fatias</strong>: PR pequeno, revisável, com descrição clara.",
+        "Anote decisões do time; participe de daily sem monopolizar.",
+        "Errou? Assume, corrige, registra aprendizado — confiança &gt; ego.",
+        "Horário e combinados: remoto também é profissionalismo."
+      ]
+    },
+    {
+      "order": 16,
+      "modifiers": [
+        "section"
+      ],
+      "badge": "Tema 04",
+      "type": "section",
+      "sectionNum": "04",
+      "title": "Subindo de senioridade",
+      "subtitle": "Promoção raramente cai do céu — visibilidade + impacto + conversa."
+    },
+    {
+      "order": 17,
+      "modifiers": [],
+      "badge": "Carreira",
+      "type": "card",
+      "title": "Como mostrar trabalho",
+      "items": [
+        "<strong>Brag document</strong> mensal: o que entregou, métrica, risco evitado, quem ajudou.",
+        "PRs e demos: antes/depois, print de dashboard, tempo de resposta.",
+        "1:1 com líder: pauta com objetivos alinhados à rubrica de nível (pleno/sênior).",
+        "Compartilhe conhecimento: lunch &amp; learn, doc interna, onboarding melhorado."
+      ]
+    },
+    {
+      "order": 18,
+      "modifiers": [],
+      "badge": "Carreira",
+      "type": "card",
+      "title": "Linha do tempo realista",
+      "items": [
+        "<strong>0–12 meses:</strong> aprender o sistema, entregar tickets com qualidade.",
+        "<strong>12–24 meses:</strong> dono de feature, propor melhorias, reduzir débito local.",
+        "<strong>24–36+ meses:</strong> influência cross-team, mentoria, incidentes, arquitetura."
+      ],
+      "quote": "Empresa e contexto mudam os números — o padrão é: <em>escopo maior, autonomia maior</em>."
+    },
+    {
+      "order": 19,
+      "modifiers": [],
+      "badge": "Carreira",
+      "type": "card",
+      "title": "Como negociar promoção",
+      "items": [
+        "Peça <strong>critérios explícitos</strong> do próximo nível (comportamentos, não só “tempo de casa”).",
+        "Traga evidências do brag doc; compare com a rubrica.",
+        "Se não houver vaga/orçamento: plano com data de revisão, escopo, salário alvo.",
+        "Alternativas: título, faixa salarial, projetos estratégicos — negocie pacote."
+      ]
+    },
+    {
+      "order": 20,
+      "modifiers": [],
+      "badge": "Carreira",
+      "type": "card",
+      "title": "Visibilidade sem “puxar saco”",
+      "items": [
+        "<strong>Relacionamento ≠ bajulação:</strong> seja confiável, claro e útil para o time e o líder.",
+        "Antecipe problema com solução; não só “deu ruim”.",
+        "Reconheça trabalho dos outros — reputação é rede.",
+        "Política existe; ética é não inventar mérito nem apagar colega."
+      ]
+    },
+    {
+      "order": 21,
+      "modifiers": [
+        "section"
+      ],
+      "badge": "Tema 05",
+      "type": "section",
+      "sectionNum": "05",
+      "title": "Networking",
+      "subtitle": "Porta que mais abre: alguém que já viu você trabalhar (ou estudar sério)."
+    },
+    {
+      "order": 22,
+      "modifiers": [],
+      "badge": "Networking",
+      "type": "card",
+      "title": "Indicações que funcionam",
+      "items": [
+        "Mensagem curta: quem você é, vaga alvo, link GitHub/LinkedIn, <strong>por que encaixa</strong>.",
+        "Facilite o indicador: CV em PDF, bloco de competências, disponibilidade.",
+        "Depois da indicação: feedback para quem indicou — fecha o ciclo.",
+        "Indique outros quando puder; rede é conta corrente de reciprocidade."
+      ]
+    },
+    {
+      "order": 23,
+      "modifiers": [],
+      "badge": "Networking",
+      "type": "grid",
+      "title": "Comunidades",
+      "cards": [
+        {
+          "title": "Presença",
+          "text": "Meetup, live, open source local — consistência &gt; um evento por ano."
+        },
+        {
+          "title": "Contribuição",
+          "text": "Responda dúvida de iniciante, revise PR, escreva resumo de talk."
+        },
+        {
+          "title": "Marca",
+          "text": "Um tema: “júnior em Java”, “primeiro emprego” — foco ajuda a ser lembrado."
+        },
+        {
+          "title": "Online",
+          "text": "LinkedIn técnico, blog curto, thread de aprendizado — não precisa ser influencer."
+        }
+      ]
+    },
+    {
+      "order": 24,
+      "modifiers": [],
+      "badge": "Networking",
+      "type": "card",
+      "title": "Comunicação",
+      "items": [
+        "<strong>Escrito:</strong> título claro, contexto, pedido, prazo — no Slack e no e-mail.",
+        "<strong>Falado:</strong> daily objetiva; reunião com agenda; “não sei” honesto.",
+        "<strong>Escuta:</strong> repetir entendimento antes de codar — evita retrabalho.",
+        "Inglês técnico: mesmo B1 abre vaga remota — 15 min/dia já conta."
+      ]
+    },
+    {
+      "order": 25,
+      "modifiers": [
+        "section"
+      ],
+      "badge": "Tema 06",
+      "type": "section",
+      "sectionNum": "06",
+      "title": "IA na carreira do júnior",
+      "subtitle": "Não tenha medo — mas não troque fundamentos por atalho."
+    },
+    {
+      "order": 26,
+      "modifiers": [],
+      "badge": "IA",
+      "type": "card",
+      "title": "Multiplique, não some",
+      "items": [
+        "Use IA para <strong>explicar erro</strong>, gerar testes, rascunhar doc, explorar API — sempre validando.",
+        "Não pare de estudar estrutura de dados, segurança e sistema — IA não assina o deploy por você.",
+        "Regra: se você não consegue explicar o código em voz alta, ainda não é seu.",
+        "IA acelera quem já tem base; quem só copia e cola fica refém da ferramenta."
+      ]
+    },
+    {
+      "order": 27,
+      "modifiers": [
+        "challenge"
+      ],
+      "badge": "Desafio",
+      "type": "card",
+      "title": "Guia para devs iniciantes",
+      "items": [
+        "<strong>Stack:</strong> Java + Spring Boot, Angular, PostgreSQL, Docker, JWT, testes.",
+        "<strong>Trilha:</strong> login → S3/MinIO → feed → RabbitMQ → trending e recomendações (9 tasks).",
+        "<strong>Regras:</strong> Gitflow, código seu, sem gerador/“projeto inteiro na IA”, 80% de cobertura no que você fizer."
+      ],
+      "quote": "Comece pela Task 1 e não pule etapas — é assim que time de produto trabalha.",
+      "intro": "Repositório de <strong>prática guiada</strong> — não é produto pronto. Você implementa, testa, documenta e evolui task por task.",
+      "link": {
+        "href": "https://github.com/developerRafu/app-java-angular-login",
+        "label": "Abrir no GitHub",
+        "text": "github.com/developerRafu/app-java-angular-login"
+      }
+    },
+    {
+      "order": 28,
+      "modifiers": [
+        "open"
+      ],
+      "badge": "Rodízio",
+      "type": "open",
+      "title": "Bora trocar ideia?",
+      "prompt": "Espaço aberto para <strong>outros devs</strong> compartilharem experiências, dicas, erros que viraram aprendizado e caminhos para a primeira vaga.",
+      "items": [
+        "Qual foi sua virada de chave na carreira?",
+        "O que você faria diferente como júnior?",
+        "Qual comunidade ou hábito mais te ajudou?"
+      ]
+    },
+    {
+      "order": 29,
+      "modifiers": [
+        "links"
+      ],
+      "badge": "Conecte",
+      "type": "links",
+      "title": "Rafael Almeida",
+      "subtitle": "Do primeiro commit a grandes conquistas — obrigado, Norte4j!",
+      "links": [
+        {
+          "href": "https://github.com/developerRafu",
+          "label": "GitHub",
+          "text": "github.com/developerRafu"
+        },
+        {
+          "href": "https://developerrafu.github.io/portfolio/",
+          "label": "Portfólio",
+          "text": "developerrafu.github.io/portfolio"
+        },
+        {
+          "href": "https://www.instagram.com/rafu.class/",
+          "label": "Instagram",
+          "text": "@rafu.class"
+        },
+        {
+          "href": "https://chat.whatsapp.com/CEC5j1W4Rcb7vRuRQZ03xj",
+          "label": "Norte4j · WhatsApp",
+          "text": "Grupo Geral — Java &amp; Kotlin"
+        },
+        {
+          "href": "https://comunidade.devsnorte.com/comunidade/norte4j-java-kotlin-community-35",
+          "label": "Grupo / eventos",
+          "text": "Comunidade Norte (Norte4j)"
+        },
+        {
+          "href": "https://developerrafu.github.io/landing-consultoria-java/",
+          "label": "Mentoria Dev Java + IA",
+          "text": "Vem pra mentoria"
+        }
+      ],
+      "footerMeta": "Slides online: developerrafu.github.io/portfolio/apresentacao/dev-juninho-30-slides.html"
+    }
+  ]
+}

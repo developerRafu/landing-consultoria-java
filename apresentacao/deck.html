@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-slides-config="dev-juninho-30-slides.json">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dev: dicas de carreira pra Juninho — 30 slides</title>
-  <link rel="preload" href="dev-juninho-30-slides.json" as="fetch" crossorigin>
+  <title>Slides</title>
   <link rel="stylesheet" href="assets/slides.css">
+  <script>
+    (function () {
+      const params = new URLSearchParams(location.search);
+      const deck = params.get("deck") || "dev-juninho-30-slides.json";
+      document.documentElement.setAttribute("data-slides-config", deck);
+      const link = document.createElement("link");
+      link.rel = "preload";
+      link.href = deck;
+      link.as = "fetch";
+      link.crossOrigin = "";
+      document.head.appendChild(link);
+    })();
+  </script>
 </head>
 <body>
   <div class="deck" id="deck" aria-live="polite"></div>

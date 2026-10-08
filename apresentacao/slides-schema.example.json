@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "id": "meu-deck",
+    "title": "Título da apresentação — N slides",
+    "shortTitle": "Título curto (aba do navegador por slide)",
+    "lang": "pt-BR",
+    "slideTitlePrefix": "Slide",
+    "navigationHint": "Opcional — texto na capa"
+  },
+  "slides": [
+    {
+      "order": 1,
+      "type": "cover",
+      "modifiers": [],
+      "badge": "Comunidade / evento",
+      "title": "Título principal",
+      "titleScript": "linha em destaque (opcional)",
+      "subtitle": "Subtítulo da capa.",
+      "meta": "Dica de navegação",
+      "image": { "src": "assets/capa.jpg", "alt": "Descrição da imagem" }
+    },
+    {
+      "order": 2,
+      "type": "grid",
+      "badge": "Roteiro",
+      "title": "O que vamos ver",
+      "cards": [
+        { "title": "01", "text": "Primeiro bloco" },
+        { "title": "02", "text": "Segundo bloco" }
+      ]
+    },
+    {
+      "order": 3,
+      "type": "section",
+      "modifiers": ["section"],
+      "badge": "Tema 01",
+      "sectionNum": "01",
+      "title": "Título do bloco",
+      "subtitle": "Frase de abertura do tema."
+    },
+    {
+      "order": 4,
+      "type": "card",
+      "badge": "Tag",
+      "title": "Slide com lista",
+      "items": [
+        "Item com <strong>HTML</strong> permitido no JSON.",
+        "Outro item"
+      ],
+      "quote": "Citação opcional no rodapé do card."
+    },
+    {
+      "order": 5,
+      "type": "card",
+      "modifiers": ["challenge"],
+      "badge": "Desafio",
+      "title": "Call to action",
+      "intro": "Texto introdutório.",
+      "items": ["Bullet 1", "Bullet 2"],
+      "link": {
+        "href": "https://example.com",
+        "label": "Abrir",
+        "text": "example.com"
+      },
+      "quote": "Fechamento opcional."
+    },
+    {
+      "order": 6,
+      "type": "open",
+      "modifiers": ["open"],
+      "badge": "Rodízio",
+      "title": "Perguntas ao público",
+      "prompt": "Texto do espaço aberto.",
+      "items": ["Pergunta 1?", "Pergunta 2?"]
+    },
+    {
+      "order": 7,
+      "type": "links",
+      "modifiers": ["links"],
+      "badge": "Conecte",
+      "title": "Seu nome",
+      "subtitle": "Agradecimento ou tagline.",
+      "links": [
+        { "href": "https://github.com/voce", "label": "GitHub", "text": "github.com/voce" }
+      ],
+      "footerMeta": "URL pública dos slides (opcional)"
+    }
+  ]
+}
