@@ -17,6 +17,10 @@ python3 -m http.server 8080
 
 Acesse: `http://localhost:8080/dev-juninho-30-slides.html`
 
+Outros decks na pasta (mesmo motor):
+
+- `http://localhost:8080/rotura-membranas-tpp.html` — RPM e trabalho de parto prematuro (`rotura-membranas-tpp.json`)
+
 ## Navegação
 
 - **→** / **Espaço**: próximo slide  

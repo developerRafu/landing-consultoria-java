@@ -1,0 +1,254 @@
+{
+  "meta": {
+    "id": "rotura-membranas-tpp",
+    "title": "Rotura prematura de membranas e trabalho de parto prematuro",
+    "shortTitle": "RPM e TPP",
+    "lang": "pt-BR",
+    "slideTitlePrefix": "Slide"
+  },
+  "slides": [
+    {
+      "order": 1,
+      "type": "cover",
+      "badge": "Obstetrícia · gestação de alto risco",
+      "title": "Rotura prematura de membranas",
+      "titleScript": "e trabalho de parto prematuro",
+      "subtitle": "Conceitos, diagnóstico e linhas gerais de conduta na gestação &lt; 37 semanas — material educativo.",
+      "meta": "← → ou Avançar · F = tela cheia · Não substitui protocolo institucional"
+    },
+    {
+      "order": 2,
+      "type": "grid",
+      "badge": "Roteiro",
+      "title": "O que veremos",
+      "cards": [
+        { "title": "01", "text": "Definições: RPM, RPMO e TPP" },
+        { "title": "02", "text": "Epidemiologia e fatores de risco" },
+        { "title": "03", "text": "Diagnóstico clínico e propedêutica" },
+        { "title": "04", "text": "Conduta materno-fetal na prematuridade" },
+        { "title": "05", "text": "Complicações e mensagens-chave" }
+      ]
+    },
+    {
+      "order": 3,
+      "type": "section",
+      "modifiers": ["section"],
+      "badge": "Tema 01",
+      "sectionNum": "01",
+      "title": "Definições",
+      "subtitle": "Separar rotura de membranas de trabalho de parto — e termo de prematuridade."
+    },
+    {
+      "order": 4,
+      "type": "card",
+      "badge": "RPM",
+      "title": "Rotura prematura de membranas (RPM)",
+      "items": [
+        "Ruptura espontânea das membranas amnióticas <strong>antes do início do trabalho de parto</strong>.",
+        "Confirmação clínica/laboratorial após história de perda de líquido vaginal.",
+        "<strong>RPMO</strong> (obstétrica): RPM antes de 37 semanas de gestação.",
+        "Diferente de <strong>rotura artificial</strong> (amniotomia) e de vazamento urinário ou corrimento."
+      ],
+      "quote": "RPM não é sinônimo de parto iminente — pode haver período de latência."
+    },
+    {
+      "order": 5,
+      "type": "card",
+      "badge": "TPP",
+      "title": "Trabalho de parto prematuro (TPP)",
+      "items": [
+        "Contrações uterinas regulares com <strong>modificações cervicais</strong> antes de 37 semanas.",
+        "Inclui fases latente e ativa; o risco neonatal cresce quanto menor a idade gestacional.",
+        "RPMO pode evoluir para TPP; também há TPP com membranas íntegras.",
+        "Conduta depende de <strong>IG</strong>, vitalidade fetal, infecção e maturidade do colo."
+      ]
+    },
+    {
+      "order": 6,
+      "type": "card",
+      "badge": "Cronologia",
+      "title": "RPMO × RPM a termo",
+      "items": [
+        "<strong>&lt; 34 semanas:</strong> maior benefício de corticoterapia e, quando indicado, sulfato de magnésio para neuroproteção (conforme diretriz vigente).",
+        "<strong>34–36 semanas:</strong> decisão individualizada (maturidade fetal, latência, sinais de infecção).",
+        "<strong>≥ 37 semanas:</strong> RPM costuma conduzir à indução/evolução do parto conforme protocolo local.",
+        "Sempre avaliar <strong>corioamnionite</strong>, sofrimento fetal e bem-estar materno."
+      ]
+    },
+    {
+      "order": 7,
+      "type": "section",
+      "modifiers": ["section"],
+      "badge": "Tema 02",
+      "sectionNum": "02",
+      "title": "Contexto clínico",
+      "subtitle": "Prematuridade permanece causa importante de morbimortalidade perinatal."
+    },
+    {
+      "order": 8,
+      "type": "grid",
+      "badge": "Fatores de risco",
+      "title": "Associados a RPMO / TPP",
+      "cards": [
+        { "title": "Infecciosos", "text": "Infecção geniturinária, bacteriúria, vaginose; corioamnionite." },
+        { "title": "Utero-cervicais", "text": "Colo curto, incompetência istmo-cervical, malformações, polidrâmnio." },
+        { "title": "Materno-fetais", "text": "Gestação múltipla, sangramento, estresse, comorbidades." },
+        { "title": "Comportamentais", "text": "Tabagismo, baixo peso, intervalo interpartal curto, sem causa em parte dos casos." }
+      ]
+    },
+    {
+      "order": 9,
+      "type": "section",
+      "modifiers": ["section"],
+      "badge": "Tema 03",
+      "sectionNum": "03",
+      "title": "Diagnóstico",
+      "subtitle": "História + exame; evitar manipulação desnecessária do colo."
+    },
+    {
+      "order": 10,
+      "type": "card",
+      "badge": "Propedêutica",
+      "title": "Confirmando RPM",
+      "items": [
+        "Anamnese: perda súbita ou contínua de líquido claro, sensação de “banho”, pH alcalino.",
+        "Exame especular estéril: <strong>pooling</strong> de líquido no fundo de saco, avaliação do colo.",
+        "Testes auxiliares quando disponíveis: <strong>nitrazina</strong>, cristalização em “folha de samambaia”, testes imunocromatográficos.",
+        "Evitar toque vaginal digital rotineiro se não estiver em trabalho de parto — aumenta risco infeccioso."
+      ]
+    },
+    {
+      "order": 11,
+      "type": "card",
+      "badge": "TPP",
+      "title": "Reconhecendo trabalho de parto prematuro",
+      "items": [
+        "Contrações ≥ 4 em 20 min ou ≥ 8 em 60 min, com <strong>apagamento/dilatação</strong> cervical.",
+        "Descartar causas de contrações: infecção, depleção de líquido, descolamento de placenta, patologia materna.",
+        "Ultrassom para IG, apresentação, líquido amniótico e peso fetal estimado quando possível.",
+        "Monitorização fetal conforme idade gestacional e protocolo da unidade."
+      ]
+    },
+    {
+      "order": 12,
+      "type": "section",
+      "modifiers": ["section"],
+      "badge": "Tema 04",
+      "sectionNum": "04",
+      "title": "Conduta geral",
+      "subtitle": "Resumo educativo — sempre alinhar à diretriz local e à avaliação individual."
+    },
+    {
+      "order": 13,
+      "type": "card",
+      "badge": "RPMO",
+      "title": "RPMO sem trabalho de parto ativo",
+      "items": [
+        "Internação em serviço com suporte neonatal adequado à IG.",
+        "<strong>Corticosteroides</strong> para maturação pulmonar fetal nas janelas indicadas (ex.: &lt; 34–36 semanas, conforme protocolo).",
+        "Antibiótico para <strong>prolongar latência</strong> e reduzir morbidade infecciosa em RPMO precoce (esquemas baseados em evidência, ex.: macrolídeo).",
+        "Profilaxia para <strong>Streptococcus do grupo B</strong> no parto quando indicada; vigilância de corioamnionite."
+      ]
+    },
+    {
+      "order": 14,
+      "type": "card",
+      "badge": "TPP",
+      "title": "Trabalho de parto prematuro",
+      "items": [
+        "<strong>Tocolise</strong> quando houver benefício (ex.: ganhar tempo para corticoterapia), respeitando contraindicações.",
+        "Corticosteroides e neuroprofilaxia com <strong>sulfato de magnésio</strong> nas IG elegíveis, conforme diretriz.",
+        "Antibiótico se RPM associada ou indicação infecciosa; não usar tocolítico com corioamnionite ou sofrimento fetal.",
+        "Definir via de parto e momento com equipe multidisciplinar (obstetrícia, neonatologia)."
+      ],
+      "quote": "Parto é indicado diante de infecção materna/fetal, sofrimento agudo ou contraindicação à manutenção da gestação."
+    },
+    {
+      "order": 15,
+      "type": "grid",
+      "modifiers": ["scroll", "checklist"],
+      "badge": "Alertas",
+      "title": "Sinais que exigem reavaliação imediata",
+      "cards": [
+        { "title": "Febre", "text": "Materna &gt; 38 °C, taquicardia, dor uterina, secreção fétida." },
+        { "title": "Feto", "text": "Taquicardia ou bradicardia sustentada, queda de movimentos." },
+        { "title": "Materno", "text": "Leucocitose, mal-estar importante, hipotensão." },
+        { "title": "Parto", "text": "Dilatação progressiva, bolsa rota com líquido purulento ou fétido." }
+      ]
+    },
+    {
+      "order": 16,
+      "type": "card",
+      "badge": "Desfechos",
+      "title": "Complicações principais",
+      "items": [
+        "<strong>Neonatais:</strong> síndrome do desconforto respiratório, sepse, enterocolite, hemorragia peri-intraventricular, sequelas neurológicas.",
+        "<strong>Maternas:</strong> corioamnionite, endometrite, sepse, hemorragia.",
+        "<strong>Prolongamento da gestação</strong> (quando seguro) melhora desfechos; equilibrar com risco infeccioso.",
+        "Aconselhamento e suporte emocional à gestante e família."
+      ]
+    },
+    {
+      "order": 17,
+      "type": "section",
+      "modifiers": ["section"],
+      "badge": "Tema 05",
+      "sectionNum": "05",
+      "title": "Mensagens-chave",
+      "subtitle": "Para fixar na prática clínica e nas provas."
+    },
+    {
+      "order": 18,
+      "type": "card",
+      "badge": "Resumo",
+      "title": "Checklist mental",
+      "items": [
+        "Confirmar <strong>IG</strong> e se há RPM, TPP ou ambos.",
+        "Excluir infecção e sofrimento fetal antes de conduta expectante.",
+        "Corticosteroides + antibiótico na RPMO precoce + GBS no parto quando indicado.",
+        "Tocolise seletiva no TPP para otimizar maturação fetal, sem atrasar parto necessário.",
+        "Registrar conduta conforme <strong>protocolo da maternidade</strong> e documentação legal."
+      ],
+      "quote": "Conteúdo educativo — decisão clínica exige avaliação presencial e diretrizes atualizadas."
+    },
+    {
+      "order": 19,
+      "type": "open",
+      "modifiers": ["open"],
+      "badge": "Discussão",
+      "title": "Casos e perguntas",
+      "prompt": "Espaço para discutir <strong>vignettes</strong>: RPMO em 28 semanas, TPP com colo 2 cm, líquido meconial, febre materna.",
+      "items": [
+        "Quando você indicaria parto imediato vs expectante?",
+        "Como sua unidade organiza transferência para nível terciário?",
+        "Quais testes de rotina na admissão por RPMO?"
+      ]
+    },
+    {
+      "order": 20,
+      "type": "links",
+      "modifiers": ["links"],
+      "badge": "Referências",
+      "title": "Leitura complementar",
+      "subtitle": "Consulte sempre a versão mais recente das diretrizes oficiais.",
+      "links": [
+        {
+          "href": "https://www.who.int/publications",
+          "label": "OMS",
+          "text": "WHO recommendations on maternal and newborn care"
+        },
+        {
+          "href": "https://www.febrasgo.org.br/",
+          "label": "FEBRASGO",
+          "text": "Protocolos e notas técnicas em obstetrícia"
+        },
+        {
+          "href": "https://www.gov.br/saude/",
+          "label": "Ministério da Saúde",
+          "text": "Políticas e manuais de atenção à gestante"
+        }
+      ],
+      "footerMeta": "Deck local: rotura-membranas-tpp.html · Edite rotura-membranas-tpp.json"
+    }
+  ]
+}
